@@ -12,6 +12,6 @@ public class Provider {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("provider.xml");
         context.start();
 
-        System.in.read();
+        System.in.read(); // 为保证服务一直开着，利用输入流的阻塞来模拟
     }
 }
