@@ -1,4 +1,4 @@
-package com.zkzong.dubbo.demo.provider;
+package com.zkzong.dubbo.simple.provider;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

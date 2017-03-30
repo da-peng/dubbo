@@ -1,7 +1,7 @@
-package com.zkzong.dubbo.demo.provider;
+package com.zkzong.dubbo.simple.provider;
 
-import com.zkzong.dubbo.demo.DemoService;
-import com.zkzong.dubbo.demo.User;
+import com.zkzong.dubbo.simple.DemoService;
+import com.zkzong.dubbo.simple.User;
 
 import java.util.ArrayList;
 import java.util.List;

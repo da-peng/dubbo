@@ -1,6 +1,6 @@
-package com.zkzong.dubbo.demo.consumer;
+package com.zkzong.dubbo.simple.consumer;
 
-import com.zkzong.dubbo.demo.DemoService;
+import com.zkzong.dubbo.simple.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;

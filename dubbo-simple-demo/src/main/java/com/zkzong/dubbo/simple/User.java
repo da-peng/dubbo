@@ -1,4 +1,4 @@
-package com.zkzong.dubbo.demo;
+package com.zkzong.dubbo.simple;
 
 import java.io.Serializable;
 
