@@ -1,4 +1,4 @@
-package com.zkzong.zookeeper;
+package com.zkzong.dubbo.zookeeper;
 
 import org.apache.zookeeper.AsyncCallback.StatCallback;
 import org.apache.zookeeper.KeeperException;

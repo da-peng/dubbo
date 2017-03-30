@@ -2,11 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.zkzong</groupId>
-  <artifactId>dubbo</artifactId>
+  <groupId>com.zkzong.dubbo</groupId>
+  <artifactId>parent</artifactId>
   <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>dubbodemo</module>
+      <module>zookeeper</module>
+      <module>dubbo-simple-demo</module>
+      <module>dubbo-spring-web</module>
+      <module>dubbo-main</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -31,34 +34,37 @@
     </repository>
   </repositories>
 
-  <dependencies>
-    <!-- https://mvnrepository.com/artifact/junit/junit -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-    </dependency>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>dubbo</artifactId>
-      <version>2.5.3</version>
-    </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.5.3</version>
+      </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>4.3.3.RELEASE</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.3.RELEASE</version>
+      </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
-    <dependency>
-      <groupId>org.apache.zookeeper</groupId>
-      <artifactId>zookeeper</artifactId>
-      <version>3.4.9</version>
-    </dependency>
+      <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>3.4.9</version>
+      </dependency>
+      <dependency>
+        <groupId>com.101tec</groupId>
+        <artifactId>zkclient</artifactId>
+        <version>0.10</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-  </dependencies>
 </project>
