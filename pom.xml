@@ -10,6 +10,7 @@
       <module>dubbo-simple-demo</module>
       <module>dubbo-spring-web</module>
       <module>dubbo-main</module>
+      <module>dubbo-web-main</module>
     </modules>
     <packaging>pom</packaging>
 
