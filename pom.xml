@@ -8,7 +8,7 @@
     <modules>
       <module>zookeeper</module>
       <module>dubbo-simple-demo</module>
-      <module>dubbo-spring-web</module>
+      <module>dubbo-spring-web-provider</module>
       <module>dubbo-main</module>
       <module>dubbo-web-main</module>
     </modules>
