@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dubbo-main-final</artifactId>
+    <artifactId>dubbo-main</artifactId>
 
     <dependencies>
         <dependency>
@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>dubbo-main-final</finalName>
+        <finalName>dubbo-main</finalName>
 
         <resources>
             <resource>
@@ -124,5 +124,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
