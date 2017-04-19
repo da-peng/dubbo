@@ -1,4 +1,5 @@
-# dubbo[![Build Status](https://travis-ci.org/zongzhankui/dubbo.svg?branch=master)](https://travis-ci.org/zongzhankui/dubbo)
+# dubbo
+[![Build Status](https://travis-ci.org/zongzhankui/dubbo.svg?branch=master)](https://travis-ci.org/zongzhankui/dubbo)
 
 ## dubbo-simple-demo
 
