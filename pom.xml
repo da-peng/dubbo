@@ -13,6 +13,7 @@
       <module>dubbo-spring-web-consumer</module>
       <module>dubbo-main</module>
       <module>dubbo-web-main</module>
+        <module>dubbo-main-final</module>
     </modules>
     <packaging>pom</packaging>
 
