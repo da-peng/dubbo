@@ -46,7 +46,7 @@
                 <directory>src/main/resources/spring</directory>
                 <filtering>true</filtering>
                 <includes>
-                    <include>spring-context.xml</include>
+                    <include>spring_root.xml</include>
                 </includes>
             </resource>
         </resources>
