@@ -22,15 +22,15 @@ public class ZooKeeperClient {
 
         ZooKeeper zooKeeper = new ZooKeeper("127.0.0.1:2181", 5000, watcher);
 
-        zooKeeper.create("/RootNode", "RootNodeData".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        zooKeeper.create("/RootNode", "RootNodeData".getBytes("UTF-8"), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         System.out.println("“/RootNode”节点状态：" + zooKeeper.exists("/RootNode", true));
-        System.out.println("“RootNode”节点上数据：" + new String(zooKeeper.getData("/RootNode", false, null)));
+        System.out.println("“RootNode”节点上数据：" + new String(zooKeeper.getData("/RootNode", false, null), "UTF-8"));
 
-        zooKeeper.create("/RootNode/ChildNode1", "ChildNode1Data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        zooKeeper.create("/RootNode/ChildNode2", "ChildNode2Data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        zooKeeper.create("/RootNode/ChildNode1", "ChildNode1Data".getBytes("UTF-8"), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        zooKeeper.create("/RootNode/ChildNode2", "ChildNode2Data".getBytes("UTF-8"), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         System.out.println("目录节点“RootNode”下的所有子目录节点有：" + zooKeeper.getChildren("/RootNode", true));
 
-        zooKeeper.setData("/RootNode/ChildNode2", "NewChildNode2Data".getBytes(), -1);
+        zooKeeper.setData("/RootNode/ChildNode2", "NewChildNode2Data".getBytes("UTF-8"), -1);
         zooKeeper.delete("/RootNode/ChildNode1", -1);
         System.out.println("“/RootNode/ChildNode1”节点状态：" + zooKeeper.exists("/RootNode/ChildNode1", false));
 
