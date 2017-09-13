@@ -16,6 +16,6 @@ dubbo-spring-web-consumer
 
 
 ## 使用com.alibaba.dubbo.container.Main注册
-dubbo-web-admin （web工程）
+dubbo-web-main （web工程）
 
 dubbo-main （非web工程）
