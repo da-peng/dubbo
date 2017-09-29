@@ -13,6 +13,30 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>dubbo-spring-web-facade</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.jmeter</groupId>
             <artifactId>ApacheJmeter_java</artifactId>
             <version>3.3</version>
