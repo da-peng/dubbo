@@ -21,7 +21,7 @@ public class DubboInit {
     public static void initApplicationContext() {
         context = new ClassPathXmlApplicationContext("classpath:consumer.xml");
         if (context == null) {
-            throw new IllegalArgumentException("Load dubbo-client.xml fail");
+            throw new IllegalArgumentException("Load consumer.xml fail");
         }
     }
 

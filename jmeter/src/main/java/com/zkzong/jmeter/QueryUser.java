@@ -5,11 +5,7 @@ import com.zkzong.dubbo.web.facade.UserFacade;
 import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;
 import org.apache.jmeter.samplers.SampleResult;
-import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class QueryUser extends AbstractJavaSamplerClient {
 
